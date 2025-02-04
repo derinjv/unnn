@@ -10,7 +10,7 @@ The model is optimized for detecting five classes and utilizes the YOLOv8s pre t
 Ensure you have the required libraries installed:
 
 !pip install ultralytics
-!pip install -U albumentations
+
 
 2. Verify YOLOv8 Installation
 
