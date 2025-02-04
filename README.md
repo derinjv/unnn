@@ -1,9 +1,9 @@
-YOLOv8 Object Detection Training in Google Colab
+                                        ////YOLOv8 Object Detection Training in Google Colab////
 
 This project trains a YOLOv8 object detection model using a custom dataset in Google Colab. 
 The model is optimized for detecting five classes and utilizes the YOLOv8s pre trained model for efficient and accurate detection.
 
-Setup Instructions
+                                                         Setup Instructions
 
 1. Install Dependencies
 
@@ -66,11 +66,11 @@ After training, evaluate model performance:
 
 7. Inference with the Trained Model
 
-Test the model on new images:
+                                                           Test the model on new images:
 
 !yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source='test_image.jpg' save=True
 
-Troubleshooting & Recommendations
+                                                          //Troubleshooting & Recommendations//
 
 Dataset Issues: Ensure images and labels are correctly formatted in YOLO format.
 
@@ -78,11 +78,7 @@ Memory Errors: Reduce batch size or image size if running out of memory.
 
 Performance Optimization: Try adjusting hyperparameters such as learning rate, optimizer, and augmentation techniques.
 
-Mixed Precision Errors: Disable AMP if needed:
-
-!yolo task=detect mode=train model=yolov8s.pt data=data.yaml epochs=25 imgsz=224 plots=True amp=False
-
-References
+                                                                    //References//
 
 Ultralytics YOLOv8 Documentation
 
